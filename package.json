@@ -4,10 +4,13 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "start-es": "ng serve --configuration=es",
     "build": "ng build",
+    "build-es": "ng build --configuration=es --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "i18n": "ng xi18n --ivy --output-path src/locale"
   },
   "private": true,
   "dependencies": {
@@ -27,9 +30,10 @@
     "@angular-devkit/build-angular": "~0.1001.6",
     "@angular/cli": "~10.1.6",
     "@angular/compiler-cli": "~10.1.5",
-    "@types/node": "^12.11.1",
+    "@angular/localize": "~10.1.5",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
+    "@types/node": "^12.11.1",
     "codelyzer": "^6.0.0",
     "jasmine-core": "~3.6.0",
     "jasmine-spec-reporter": "~5.0.0",
